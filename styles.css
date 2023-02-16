@@ -1,0 +1,216 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+body {
+    background-color: hsl(229, 57%, 11%);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+
+    background-position:bottom;
+    
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+
+}
+main {
+   position: absolute;
+   top: 130px; 
+
+}
+
+.first {
+    float: left;
+    width: 200px;
+    max-height: 150px;
+    padding: 25px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 5px 70px 5px 5px;
+    
+}
+ .document {
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    padding: 5px;
+    padding-bottom: 8px;
+    padding-top: 7px;
+    border-radius: 7px;
+    margin-right: 10px;
+    background-color: hsl(229, 57%, 11%);
+}
+.logo {
+    max-width: 100px;
+    padding-bottom: 15px;
+}
+.second {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: hsl(228, 56%, 26%);
+    color: white;
+    padding: 20px;
+    float: right;
+    width: 350px;
+    border-radius: 10px;
+    padding-bottom: 0px;
+}
+.you {
+color: hsl(243, 100%, 93%);
+font-size: 11px;
+}
+.sr {
+    font-size: 16px;
+}
+.read {
+    display: flex;
+}
+.read .gb {
+    text-align: center;
+    background-color: white;
+    color: hsl(229, 7%, 55%);
+    font-size: 11px;
+    border-radius: 10px;
+    width: 120px;
+    padding: 10px;
+    left: 10px;
+    top: -85px;
+    position: relative;
+    opacity: 0;
+    transition: 0.5s;
+}
+.read .gb::before {
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    bottom: -17px;
+    right: 0px;
+    border-style: solid;
+    border-width: 20px;
+    border-color:  transparent  white transparent  transparent;
+}
+.read:hover .gb {
+    top: -35px;
+    opacity: 1;
+
+}
+.le {
+    font-size: 22px;
+    color: hsl(228, 56%, 26%);
+    font-weight: bolder;
+}
+.load1 {
+    position: relative;
+}
+.load {
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 230px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+}
+.load::after {
+    content: '';
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    width: 9px;
+    height: 8px;
+    border-radius: 5px;
+    margin: auto 0;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    
+   
+}
+.load2 {
+    background-color: hsl(229, 57%, 11%);
+    width: 340px;
+    height: 10px;
+    border-radius: 5px;
+    padding: 2px;
+}
+.down1 {
+    float: left;
+    font-size: 11px;
+}
+.down2 {
+    float: right;
+    font-size: 11px;
+}
+.down {
+    font-size: 11px;
+}
+.attribution {
+    clear: both;
+    color: white;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .full {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    }
+body {
+    background-image: url(/images/bg-mobile.png);
+    background-size: cover;
+    overflow: hidden;
+}
+.second {
+    width: 200px;
+    margin-left: 0px;
+
+}
+.load2 {
+    width: 190px;
+}
+.load {
+    width: 160px;
+}
+.read {
+    display: flex;
+    flex-direction: column;
+
+}
+.read .gb {
+    position: absolute;
+    opacity: 0;
+    top: 150px;
+    overflow: hidden;
+    padding-top: px;
+    height: 40px;
+    left: 59px;
+    top: 290px;
+    text-align: center;
+    width: 100px;
+    
+
+}
+
+.read:hover .gb {
+    top: 260px;
+    opacity: 1;
+
+}
+.second {
+    padding-bottom: 30px;
+}
+.attribution {
+    clear: both;
+    color: white;
+    padding-top: 40px;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+  }
+  
